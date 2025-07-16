@@ -75,6 +75,16 @@ const Navigation = () => {
             >
               Investors
             </Link>
+            <Link
+              to="/login"
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive("/login")
+                  ? "text-purple-600 bg-purple-50"
+                  : "text-gray-700 hover:text-purple-600 hover:bg-purple-50"
+              }`}
+            >
+              Login
+            </Link>
           </div>
 
           {/* Mobile menu button */}
