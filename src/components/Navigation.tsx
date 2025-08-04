@@ -16,9 +16,11 @@ const Navigation = () => {
             <img
               src="./medola-logo.png"
               alt="Medola Logo"
-              className="h-10 w-10 rounded-lg"
+              // className="h-10 w-10 rounded-lg"
+              // className="h-10 w-10 rounded-lg animate-slow-spin"
+              className="h-16 w-16 rounded-lg animate-slow-flip"
             />
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               medola
             </span>
           </Link>

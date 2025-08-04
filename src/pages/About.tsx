@@ -19,7 +19,7 @@ const About = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We're on a mission to revolutionize digital experiences through
+              We're on a mission to revolutionize digital experiences in healthcare through
               innovative technology and thoughtful design
             </p>
           </div>
@@ -52,7 +52,7 @@ const About = () => {
               </p>
             </div>
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl flex items-center justify-center">
+              <div className="w-400 h-40 bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl flex items-center justify-center">
                 <img
                   src="./medola-logo.png"
                   alt="Medola Logo"
@@ -77,7 +77,7 @@ const About = () => {
                   Our Mission
                 </h3>
                 <p className="text-gray-600 text-lg">
-                  To empower individuals and businesses with innovative digital
+                  To empower individuals and healthcare provider with innovative digital
                   solutions that simplify complex processes and enhance
                   productivity while maintaining the highest standards of
                   security and user experience.
@@ -94,7 +94,7 @@ const About = () => {
                   Our Vision
                 </h3>
                 <p className="text-gray-600 text-lg">
-                  To become the global leader in user-centric digital platforms,
+                  To become the global leader in user-centric digital health platforms,
                   where technology seamlessly integrates with human needs,
                   creating a more connected and efficient world for everyone.
                 </p>
@@ -171,7 +171,7 @@ const About = () => {
               <div className="text-purple-100">Team Members</div>
             </div>
             <div className="text-white">
-              <div className="text-4xl font-bold mb-2">8</div>
+              <div className="text-4xl font-bold mb-2">5</div>
               <div className="text-purple-100">Countries</div>
             </div>
             <div className="text-white">

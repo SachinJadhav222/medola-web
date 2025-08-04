@@ -15,9 +15,11 @@ const Index = () => {
           <div className="text-center">
             <div className="mb-8">
               <img
-                src="./medola-logo.png"
+                //src="./medola-logo.png"
+                src="./logoanimation.gif"
                 alt="Medola Logo"
-                className="h-24 w-24 mx-auto rounded-2xl shadow-lg"
+                //className="h-24 w-24 mx-auto rounded-2xl shadow-lg"
+                className="h-32 w-32 mx-auto rounded-2xl shadow-lg"
               />
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -27,7 +29,7 @@ const Index = () => {
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Experience the future of digital innovation with our cutting-edge
-              platform designed for modern users
+              health tech platform designed for all types users
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
@@ -58,8 +60,8 @@ const Index = () => {
               Why Choose Medola?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover the features that make our platform the perfect choice
-              for your needs
+              Discover the features that makes the perfect choice
+              for all your health related needs
             </p>
           </div>
 
@@ -84,7 +86,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Secure & Private</h3>
                 <p className="text-gray-600">
-                  Your data is protected with enterprise-grade security and
+                  Your data is encrypted and protected with enterprise-grade security and
                   privacy measures you can trust.
                 </p>
               </CardContent>
@@ -113,21 +115,27 @@ const Index = () => {
             Download Medola Today
           </h2>
           <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of users who have already transformed their digital
-            experience
+            Join thousands of users who have already transformed their health
+            experience with Medola
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#"
-              className="bg-black hover:bg-gray-900 text-white rounded-lg p-4 transition-colors inline-flex items-center space-x-3"
+              // className="bg-black hover:bg-gray-900 text-white rounded-lg p-4 transition-colors inline-flex items-center space-x-3"
             >
-              <div className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]">
+              <div /*className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]"*/
+              >
                 {/* <span className="text-black font-bold">A</span> */}
-                <img
+                {/* <img
                   src="https://b.zmtcdn.com/data/o2_assets/df6464de32f4a09262cee301f65aaa661739351256.png"
                   alt="App Store"
                   className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]"
+                /> */}
+                <img
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  alt="Download on the App Store"
+                  className="h-14"
                 />
               </div>
               {/* <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center">
@@ -159,13 +167,19 @@ const Index = () => {
 
             <a
               href="#"
-              className="bg-black hover:bg-gray-900 text-white rounded-lg p-4 transition-colors inline-flex items-center space-x-3"
+              // className="bg-black hover:bg-gray-900 text-white rounded-lg p-4 transition-colors inline-flex items-center space-x-3"
             >
-              <div className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]">
-                <img
+              <div /*className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]"*/>
+                {/* <img
                   src="https://b.zmtcdn.com/data/o2_assets/aad864bd17860b27634fe621001c32db1739350431.png"
                   alt="Google Play Logo"
-                   className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]"
+                  className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]"
+                /> */}
+                <img
+                  //src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
+                  alt="Get it on Google Play"
+                  className="h-14"
                 />
               </div>
               {/* <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center">
@@ -183,6 +197,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
 
       {/* Stats Section */}
       <section className="py-16 bg-gray-50">
@@ -205,7 +220,7 @@ const Index = () => {
               </div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
+              <div className="text-4xl font-bold text-purple-600 mb-2">5+</div>
               <div className="text-gray-600">Countries</div>
             </div>
             <div>

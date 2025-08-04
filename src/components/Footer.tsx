@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+//import InvestorRelations from "@/pages/InvestorRelations";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Transforming the way you experience digital solutions with
+              Transforming the way you experience digital solutions for your health with
               innovative technology and elegant design.
             </p>
             <div className="flex space-x-4">
@@ -66,6 +67,14 @@ const Footer = () => {
                   News
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/investor-relations"
+                  className="text-gray-300 hover:text-purple-400 transition-colors"
+                >
+                  Investor
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -75,7 +84,7 @@ const Footer = () => {
             <div className="space-y-3">
               <a
                 href="#"
-                className="block w-full bg-black rounded-lg p-3 hover:bg-gray-800 transition-colors"
+                // className="block w-full bg-black rounded-lg p-3 hover:bg-gray-800 transition-colors"
               >
                 <div className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[64px]">
                   {/* <span className="text-black font-bold">A</span> */}
@@ -102,7 +111,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="block w-full bg-black rounded-lg p-3 hover:bg-gray-800 transition-colors"
+                // className="block w-full bg-black rounded-lg p-3 hover:bg-gray-800 transition-colors"
               >
                 <div className="h-12 object-contain md:h-[48px] xl:h-[56px] 2xl:h-[54px]">
                   <img
