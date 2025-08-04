@@ -5,12 +5,12 @@ on:
     branches: [main]
 
   workflow_dispatch: # Enables the "Deploy Now" button in GitHub UI
-  inputs:
-    deploy_label:
-      description: '🔵 Click "Run workflow" to Deploy to DigitalOcean' # 👈 This label shows in the UI
-      required: false
-      default: "Manual Deploy Trigger"
-      
+    inputs:
+      deploy_label:
+        description: '🔵 Click "Run workflow" to Deploy to DigitalOcean' # 👈 This label shows in the UI
+        required: false
+        default: "Manual Deploy Trigger"
+
 jobs:
   deploy:
     name: Build and Deploy to DO Server
