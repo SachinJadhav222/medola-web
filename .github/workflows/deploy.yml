@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
 
-  workflow_dispatch:  # 👈 Enables the "Deploy Now" button
+  workflow_dispatch:  # Enables the "Deploy Now" button in GitHub UI
 
 jobs:
   deploy:
@@ -31,9 +31,12 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: 🚚 Deploy `dist/` to server
+      - name: 🚚 Sync dist/ to server via rsync
         run: |
-          rsync -avz --delete ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/medola/
+          rsync -avz \
+            -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/medola/
 
       - name: 🔁 Reload Nginx (optional)
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "systemctl reload nginx"
+        run: |
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "systemctl reload nginx"
