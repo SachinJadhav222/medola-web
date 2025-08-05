@@ -13,7 +13,7 @@ const CookiePolicy = () => {
               Medola Cookie Policy
             </h1>
             <p className="text-gray-600 mb-8">
-              Last updated: December 16, 2024
+              Last updated: June 16, 2025
             </p>
 
             <div className="prose prose-lg max-w-none">
