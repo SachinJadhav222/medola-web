@@ -118,7 +118,7 @@ const InvestorRelations = () => {
           </p>
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-8">
             <p className="text-gray-700 mb-2">
-              <strong>Email:</strong> investors@medola.co.in
+              <strong>Email:</strong> investor.relations@medola.co.in
             </p>
             <p className="text-gray-700 mb-2">
               <strong>Phone:</strong> +917066547411
